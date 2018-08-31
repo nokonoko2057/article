@@ -7,3 +7,5 @@
 
 ## Design
 - [目的別に探す！確認しておきたい無料ワイヤーフレーム50個まとめ 2018年度 - PhotoshopVIP](http://photoshopvip.net/109384)
+
+- [商用可能な無料フォント限定！2018年上半期公開のフリーフォント厳選80個まとめ - PhotoshopVIP](http://photoshopvip.net/109923)

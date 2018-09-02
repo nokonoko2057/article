@@ -72,8 +72,11 @@
 ## weak vs unowned
 - 参照のやつってああ使うのか
 
-##
-- 生活習慣大事
+## グラフィックス以外の分野でのMetalの可能性
+- わかりやすい
+- 画像処理に強い
+- 
+
 ---
 - [UICollectionView の Layout で悩んだら - クックパッド開発者ブログ](https://techlife.cookpad.com/entry/2017/06/29/190000)
 - [継承を使わずにクラスにプロパティを設定する方法！ - Start Today Technologies TECH BLOG](https://tech.starttoday-tech.com/entry/ios_runtime_reference)

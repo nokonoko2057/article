@@ -60,6 +60,8 @@ objc_setEnumerationMutationHandlerでsetupしないとerrorを返すよ
 - tableViewCellにVCを入れている
 - 個別のコンポーネントがイベントを発火できる
 - グルグルのインディケーターを出すのが必須
+- [MicroViewController-en](https://www.icloud.com/keynote/0vgTYDXyHQTd0l1FKTiF1jT7g#MicroViewController-en)
+
 
 ## 安定したチャットを実現するためのアプリとAPI設計 a
 
@@ -95,3 +97,43 @@ objc_setEnumerationMutationHandlerでsetupしないとerrorを返すよ
 - AST
 - flow-graph
 - swift Package Manager
+
+## 動画アプリをなめらかに動かす技術 b
+- avplayerに関して。
+- 動画は生成と破棄のタイミングが大事。
+- かなりポイントで切り替えてる感じ。viewのここまできたら、再生みたいな
+- rxSwift使っとる?
+- 生成処理はサブスレッドよりもメインスレッドが良い
+- maxbitrate : UIでの大きさに応じて、bitrateを変えている
+- playerの監視: HLS周りがwwdc2018にある
+
+## 差分計算アルゴリズムを用いた高速なUITableView描画 b
+- [差分計算アルゴリズムを用いた高速なUITableView描画 - Speaker Deck](https://speakerdeck.com/fumitoito/chai-fen-ji-suan-arugorizumuwoyong-itagao-su-nauitableviewmiao-hua)
+- `tableView.performBatchUpdates`
+- アルゴリズム
+    - Dwift
+    - EditDistance
+    - RxDataSources
+    - DifferenceKit
+- [The iOS Timesさんのツイート: "DifferenceKit by @ra1028fe5 is a A “fast and flexible” diffing library with O(n) complexity for Swift collections, with UITableView and UICollectionView extensions https://t.co/asfqWYOZik… https://t.co/3P0JBVEO9L"](https://twitter.com/_theiostimes/status/1026555591278256128)
+- [ra1028/DifferenceKit: 💻 A fast and flexible O(n) difference algorithm framework for Swift collection.](https://github.com/ra1028/DifferenceKit)
+- cellが複雑な場合reloadDataのが早い
+
+## レガシーなアプリケーションの 60fps化を目指す為にやっていること a
+- [レガシーなアプリケーションの 60fps化を目指す為にやっていること - Speaker Deck](https://speakerdeck.com/satoshin21/regasinaapurikesiyonfalse-60fpshua-womu-zhi-suwei-niyatuteirukoto)
+- 透過ってやっぱ速度落ちるんか
+- clipsToBoundsをtrueに
+- instul...にcoreAnimationでfps60を計測する
+
+
+
+# links
+
+- [UICollectionView の Layout で悩んだら - クックパッド開発者ブログ](https://techlife.cookpad.com/entry/2017/06/29/190000)
+- [継承を使わずにクラスにプロパティを設定する方法！ - Start Today Technologies TECH BLOG](https://tech.starttoday-tech.com/entry/ios_runtime_reference)
+- [クラスを継承せず既存クラスにオブジェクトを保持する機能を追加する - Qiita](https://qiita.com/ryotapoi/items/3fe7218b93d8e2a61a2b)
+- [[Xcode 8.2][新機能] アプリのシミュレーターへのインストールが簡単になりました！ ｜ Developers.IO](https://dev.classmethod.jp/smartphone/xcode-8-2-install-app-on-simulator/)
+- [Playground駆動開発のすすめ / Playground driven development suggestion - Speaker Deck](https://speakerdeck.com/rockname/playground-driven-development-suggestion)
+- [差分計算アルゴリズムを用いた高速なUITableView描画 - Speaker Deck](https://speakerdeck.com/fumitoito/chai-fen-ji-suan-arugorizumuwoyong-itagao-su-nauitableviewmiao-hua)
+- [The iOS Timesさんのツイート: "DifferenceKit by @ra1028fe5 is a A “fast and flexible” diffing library with O(n) complexity for Swift collections, with UITableView and UICollectionView extensions https://t.co/asfqWYOZik… https://t.co/3P0JBVEO9L"](https://twitter.com/_theiostimes/status/1026555591278256128)
+- [ra1028/DifferenceKit: 💻 A fast and flexible O(n) difference algorithm framework for Swift collection.](https://github.com/ra1028/DifferenceKit)
